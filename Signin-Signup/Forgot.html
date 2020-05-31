@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot-password</title>
+    <link rel="stylesheet" href="css-2/Style-of-Forgot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="forget">
+
+        <form>
+        
+        <h1>Forget password</h1><br><br>
+        <h4>Enter email here that you used on your account.We send link on your email to reset your password.</h4><br>
+        <input type="text" name="username" placeholder="Enter your email" /><br /><br />
+        <input type="button" value="Send" onclick="myFunction()"/><br /><br /><br>
+        <a href="Signin-form.html">Go Back to Previous Page</a><br /><br />
+        
+        <div id="msg">Link send on your email successfully!!</div>
+        
+        <script>
+        function myFunction() {
+            var x = document.getElementById("msg");
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+        </script>
+        </form>
+        </div>
+</body>
+</html>

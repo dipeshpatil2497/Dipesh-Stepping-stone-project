@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset-Passwaord</title>
+    <link rel="stylesheet" href="css-2/Style-of-Reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="reset">
+
+        <form>
+            <h1>Reset &nbsp; password</h1>
+            <input type="text" name="Username" placeholder="Enter username" ><br><br>
+            <input type="password" name="username" placeholder="Old password" ><br ><br >
+            <input type="password" name="username" placeholder="New password"><br><br>
+            <input type="password" name="username" placeholder="Confirm new password" ><br><br>
+            <input type="button" value="Save" onclick="myFunction()" ><br><br><br>
+            <a href="Signin-form.html">Go Back to Previous Page</a><br ><br >
+            <div id="msg">Your password changed successfully!!</div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("msg");
+                    x.className = "show";
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                }
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup-Form</title>
+    <link rel="stylesheet" href="css-2/Style-of-Signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="signup">
+        <form>
+            <h1>Sign-Up</h1>
+            <input type="text" name="user-id" placeholder="Enter User-ID"><br><br>
+            <input type="text" name="user-fln" placeholder="Enter Full-Name"><br><br>
+            <input type="password" name="pass" placeholder="Enter Password"><br><br>
+            <input type="password" name="cpass" placeholder="Re-enter Password"><br><br>
+            <input type="email" name="email" placeholder="Enter E-mail ID"><br><br>
+            <input type="button" value="Sign-up" onclick="myFunction()"><br><br><br>
+            Already have account? <a href="Signin-form.html">&nbsp; Sign In </a>
+            <br><br>
+            <div id="msg">
+                Congratulation you sign-up Successfully!!
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("msg");
+                    x.className = "show";
+                    setTimeout(function () { x.className = x.className.replace("show", ""); }, 3000);
+                }
+            </script>
+        </form>
+    </div>
+</body>
+
+</html>

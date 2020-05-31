@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Bree Serif', serif;
+    background: url(../img-2/help-bg.jpg) ;
+}
+
+.sign-in{
+    /* background: rgba(44, 62, 80, 0.7); */
+    background: black;
+    /* background:transparent; */
+    padding: 40px;
+    width: 450px;
+    margin: auto;
+    margin-top: 15px;
+    height: 500px;
+    position: relative;
+    /* margin-left: 180px; */
+    border-radius: 60px ;
+}
+
+form{
+    text-align: center;
+}
+
+input{
+    width: 300px;
+    text-align: center;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    /* border-bottom: 1px solid #fff; */
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 0;
+    margin-top: 20px;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type = button]{
+    border: none;
+    width: 130px;
+    background: white;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type = button]:hover{
+    color: #fff;
+    /* background-color: black; */
+    background-color: orangered;
+}
+
+.sign-in h1{
+    font-size: 40px;
+    color: white;
+}
+
+a {
+    /* color: black; */
+    color: white;
+    text-decoration: blink;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.up{
+    font-size:22px ;
+}
+
+.contanier a:nth-child(1){
+    padding-left: 15px;
+}
+
+.contanier a:nth-child(2){
+    padding-left: 35px;
+}
+
+a:hover{
+    color: deepskyblue;
+}
+
+
+.contanier{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.6;
+    font-size: 18px;
+}
+
+.logo h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 25px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.thnk h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.thnk h1 span{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: orangered;
+}

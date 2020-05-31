@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #fff;
+    font-family: 'Bree Serif', serif;
+    background: url(../img-2/help-bg.jpg) ;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-top: 10px;
+}
+
+h4{
+    color: orange;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+a {
+    color: white;
+    text-decoration: blink;
+    font-size: 17px;
+}
+
+
+.forget{
+    background-color: black;
+    padding: 40px;
+    width: 450px;
+    height: 500px;
+    margin-left: 180px;
+    margin:  0 auto ;
+    margin-top: 70px;
+    border-radius: 60px ;
+}
+
+
+form{
+    text-align: center;
+}
+
+input{
+    width: 300px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0;
+    margin-top: 25px;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+
+input[type = button]{
+    border: none;
+    width: 150px;
+    background: white;
+    color: #000;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type = button]:hover{
+    color: #fff;
+    /* background-color: black; */
+    background-color: orangered;
+}
+
+a:hover{
+    color: deepskyblue;
+}
+
+#msg {
+    visibility: hidden;
+    min-width: 250px;
+ 
+    background-color:yellow;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 33%;
+    top: 30px;
+    font-size: 20px;
+    margin-right:50px;
+}
+
+::placeholder{
+    color: aliceblue;
+    opacity: 0.6;
+}
+
+#msg.show {
+ visibility: visible;
+ -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+ animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+ from {top: 0; opacity: 0;} 
+ to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+ from {top: 0; opacity: 0;}
+ to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+ from {top: 30px; opacity: 1;} 
+ to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+ from {top: 30px; opacity: 1;}
+ to {top: 0; opacity: 0;}
+}
