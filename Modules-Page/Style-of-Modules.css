@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    /* background: rgb(233, 182, 88); */
+    background: url("reviews.jpg");
+    overflow: hidden;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo{
+    font-size: 33px;
+    font-weight: 500;
+    color: black;
+    padding: 10px;
+    font-family: 'Shrikhand', cursive;
+}
+
+.navbar .btn{
+    display: flex;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 780px;
+    
+/*    border: 2px solid black;*/
+}
+
+.navbar .btn a{
+        text-decoration: none;
+}
+
+.navbar .btn p{
+    border: 2px solid black;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+
+}
+
+.navbar .btn p:hover{
+    background-color: brown;
+    cursor: pointer;
+}
+
+
+h1{
+    margin: 16px;
+    font-size: 45px;
+    overflow: hidden;
+}
+
+.contanier{
+    margin-top: 30px;
+    padding: 32px;
+    margin-left: 400px;
+    overflow: hidden;
+}
+
+.select-box{
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.select-box .option-contanier{
+    background: #2f3648;
+    color: #f5f6fa;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+}
+
+.selected{
+    background: #2f3648;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #f5f6fa;
+    position: relative;
+    order: 0;
+    letter-spacing: 1px;
+    font-size: 25px;
+    overflow: hidden;
+}
+
+.selected::after{
+    content: "";
+    background: url("arrow-down.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    right: 10px;
+    top: 8px;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+
+.select-box .option-contanier.active{
+    max-height: 220px;
+    opacity: 1;
+    overflow-y: scroll;
+}
+.select-box .option-contanier.active + .selected::after{
+    transform: rotateX(180deg);
+    top: -11px;
+}
+
+.select-box .option-contanier::-webkit-scrollbar{
+    width: 8px;
+    background: #0d141f;
+    border-radius: 0 8px 8px 0;
+}
+
+.select-box .option-contanier::-webkit-scrollbar-thumb{
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected{
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.select-box .option:hover{
+    background: #414b57;
+}
+
+.select-box label{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.select-box label a{
+    color: white;
+    text-decoration: none;
+}
+
+.select-box .option .radio{
+    display:none;
+}
+
