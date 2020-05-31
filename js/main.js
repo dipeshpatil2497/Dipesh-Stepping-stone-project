@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
         strings: [
             "<strong>Hello</strong> <strong class='primary'>Guys...</strong>",
             "<strong>I am</strong><strong class='primary'> Dipesh Patil.</strong>",
-            "<strong>We Love </strong><strong class='primary'>coding.</strong>",
+            "<strong>I Love </strong><strong class='primary'>coding.</strong>",
             "<strong>And to</strong> <strong class='primary'>share..!!</strong>"
         ],
         typeSpeed: 30,
